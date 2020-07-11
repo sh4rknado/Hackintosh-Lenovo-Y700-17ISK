@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>19F101</string>
+	<string>20A4299v</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -31,7 +31,7 @@
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>16A300</string>
+	<string>16C58</string>
 	<key>DTSDKName</key>
 	<string>macosx10.12</string>
 	<key>DTXcode</key>
@@ -68,7 +68,7 @@
 				<key>WiFi_2</key>
 				<dict>
 					<key>password</key>
-					<string>AC4635D555</string>
+					<string>zxyssdt112233</string>
 					<key>ssid</key>
 					<string>ssdt_5G</string>
 				</dict>

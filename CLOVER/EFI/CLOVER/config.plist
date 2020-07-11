@@ -16,6 +16,8 @@
 			<dict>
 				<key>Comment-IRQ Fix</key>
 				<string>The following fixes may be needed for onboard audio/USB/etc</string>
+				<key>FixHDA</key>
+				<false/>
 				<key>FixHPET</key>
 				<true/>
 				<key>FixIPIC</key>
