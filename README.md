@@ -40,7 +40,7 @@ Guide : https://www.tech2tech.fr/creer-un-hackintosh-de-a-a-z-macos-sur-pc-parti
 
 ---
 
-## CLOVER (R5118) Floder
+## CLOVER V2.4K (R4871) Floder
 
         - CLOVER V 2.4K r4871 (installer)
         - EFI (Boot Folder Backup)
@@ -51,9 +51,9 @@ Notes :
 
 For work clover and Hackintosh :
 
-- 1) I install clover v5 after install 
-- 2) I copy past the EFI folder into EFI BOOT
-- 3) Boot into the installer or MAC
+- 1) Install clover V2.4K R4871 
+- 2) Copy past the EFI folder into EFI BOOT
+- 3) Reboot your computer
 
 
 This Clover Folder is the fork. the original Folder will be found here :
