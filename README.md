@@ -42,7 +42,7 @@ Guide : https://www.tech2tech.fr/creer-un-hackintosh-de-a-a-z-macos-sur-pc-parti
 
 ## CLOVER (R5118) Floder
 
-        - CLOVER V5 R5119 (installer)
+        - CLOVER V 2.4K r4871 (installer)
         - EFI (Boot Folder Backup)
         - ALL Driver for ideapad Y700-17ISK
         - ALL KEXT for ideapad Y700-17ISK
