@@ -58,6 +58,7 @@ For work clover and Hackintosh :
 
 This Clover Folder is the fork. the original Folder will be found here :
 
+https://github.com/uygar/lenovo-y700-hackintosh
 
 ---
 
