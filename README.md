@@ -75,3 +75,35 @@ After install Lastest itlvm your bluetooth will be function but you can't see  W
 You need HeliPort for this and run the app on startup.
 
 
+
+## Sierra bootable media
+
+hdiutil attach /Applications/Install\ macOS\ Sierra.app/Contents/SharedSupport/InstallESD.dmg -noverify -nobrowse -mountpoint /Volumes/install_app
+
+hdiutil convert /Volumes/install_app/BaseSystem.dmg -format UDSP -o /tmp/Sierra
+
+hdiutil resize -size 8g /tmp/Sierra.sparseimage
+
+hdiutil attach /tmp/Sierra.sparseimage -noverify -nobrowse -mountpoint /Volumes/install_build
+
+rm /Volumes/install_build/System/Installation/Packages
+
+cp -rp /Volumes/install_app/Packages /Volumes/install_build/System/Installation/
+
+cp /Volumes/install_app/BaseSystem.chunklist /Volumes/install_build
+
+cp /Volumes/install_app/BaseSystem.dmg /Volumes/install_build
+
+hdiutil detach /Volumes/install_app
+
+hdiutil detach /Volumes/install_build
+
+hdiutil resize -size `hdiutil resize -limits /tmp/Sierra.sparseimage | tail -n 1 | awk '{ print $1 }'`b /tmp/Sierra.sparseimage
+
+hdiutil convert /tmp/Sierra.sparseimage -format UDZO -o /tmp/Sierra
+
+rm /tmp/Sierra.sparseimage
+
+mv /tmp/Sierra.dmg ~/Desktop
+
+sudo asr restore --source ~/Desktop/Sierra.dmg --target /Volumes/CLEF --noprompt --noverify --erase
